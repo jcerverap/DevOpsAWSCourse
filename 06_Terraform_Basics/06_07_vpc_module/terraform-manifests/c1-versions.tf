@@ -8,12 +8,12 @@ terraform {
   }
 # Remote Backend
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"
-    key            = "vpc/dev/terraform.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
+    bucket = "tfstate-dev-eu-central-1-krkgmr"  # Change to your S3 bucket name (id)
+    key = "vpc/dev/terraform.tfstate" # Path within the bucket to store the state file (e.g., vpc/dev/terraform.tfstate)
+    region = "eu-central-1"
+    encrypt = true
     use_lockfile = true
-  }   
+  }
 }
 
 provider "aws" {
