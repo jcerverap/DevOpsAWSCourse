@@ -7,5 +7,5 @@ variable "environment_name" {
 variable "aws_region" {
   description = "AWS region to deploy backend (e.g., us-west-2)"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
