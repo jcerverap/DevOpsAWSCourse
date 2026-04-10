@@ -4,7 +4,7 @@
 variable "aws_region" {
   description = "AWS region to deploy resources"
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 
 # --------------------------------------------------------
@@ -92,7 +92,7 @@ variable "tags" {
 variable "node_instance_types" {
   description = "List of EC2 instance types for the node group"
   type        = list(string)
-  default     = ["t3.medium"]
+  default     = ["t3.small"]
 }
 
 # Capacity type for node group (ON_DEMAND or SPOT)
@@ -106,6 +106,6 @@ variable "node_capacity_type" {
 variable "node_disk_size" {
   description = "Disk size in GiB for worker nodes"
   type        = number
-  default     = 20
+  default     = 10
 }
 

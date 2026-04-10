@@ -12,11 +12,11 @@ terraform {
 
   # Remote backend configuration using S3 
   backend "s3" {
-    bucket         = "tfstate-dev-us-east-1-jpjtof"         
-    key            = "eks/dev/terraform.tfstate"            
-    region         = "us-east-1"                            
-    encrypt        = true                                   
-    use_lockfile   = true     
+    bucket = "tfstate-dev-eu-central-1-2lb4d4"  # Change to your S3 bucket name (id)
+    key = "eks/dev/terraform.tfstate" # Path within the bucket to store the state file (e.g., vpc/dev/terraform.tfstate)
+    region = "eu-central-1"
+    encrypt = true
+    use_lockfile = true
   }
 }
 
